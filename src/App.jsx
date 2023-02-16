@@ -11,6 +11,7 @@ function App() {
   useEffect(() => {
     const user = fetchUser();
     if (!user) navigate("/login");
+    else navigate("/");
   });
   return (
     <GoogleOAuthProvider clientId={import.meta.env.VITE_REACT_GOOGLE_API_TOKEN}>
